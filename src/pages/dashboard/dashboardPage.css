@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+.dashboard-container {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #121212; /* Fondo oscuro */
+  color: white;
+}
+
+/* Encabezado */
+.header {
+  background-color: #1F1F1F; /* Azul cian fosforescente */
+  border-bottom: 5px solid #0F5944;
+  padding: 50px;
+  color: #00FFC6;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+.titulo-principal {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  margin-top: 30px;
+  background-color: #00FFC6; /* Mismo azul cian */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar li:hover {
+  color: #0F5944;
+}
+
+/* Contenido */
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  flex: 1;
+  gap: 20px;
+}
+
+/* Publicaciones */
+.contenido-izquierdo {
+  flex: 2;
+  background-color: #2A2A2A;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,255,198,0.1);
+}
+
+/* Cursos */
+.contenido-derecho {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.curso-card {
+  background-color: #9a30bf; /* Morado suave */
+  border: 2px solid #8016a9;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.curso-card:hover {
+  transform: translateY(-5px);
+  background-color: #a96dea;
+}
+
+
+.publication-card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #2f2f2f;
+  box-shadow: 0 4px 10px rgba(0, 255, 198, 0.05);
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.publication-card:hover {
+  background-color: #252525;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 255, 198, 0.15);
+}
+
+.publication-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #00ffc8;
+}
+
+.publication-card p {
+  font-size: 1rem;
+  margin: 4px 0;
+  color: #e0e0e0;
+}
+

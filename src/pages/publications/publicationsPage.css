@@ -1,0 +1,98 @@
+/* publicationsPage.css */
+
+/* Estilo general para el contenedor */
+.publications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #121212;
+}
+
+/* Estilo para el área principal de publicaciones */
+.publications-main {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Encabezado principal de la sección de publicaciones */
+.publications-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.publications-header h1 {
+    font-size: 45px;
+    color: #00ffc8;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+
+.publications-header p {
+    font-size: 18px;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para la lista de publicaciones */
+.publications-list {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilo individual de cada publicación */
+.publications-card {
+    background-color: #1c1c1c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+    box-shadow: 0 4px 10px rgba(0, 255, 198, 0.05);
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    width: 250%; /* 3 publicaciones por fila */
+    box-sizing: border-box;
+}
+
+.publications-card:hover {
+    background-color: #252525;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 255, 198, 0.15);
+}
+
+.publications-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #00ffc8;
+}
+
+.publications-card p {
+    font-size: 1rem;
+    margin: 4px 0;
+    color: #e0e0e0;
+}
+
+/* Botón para ver más publicaciones */
+.publications-load-more {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.publications-load-more:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,41 @@
+.nav-container {
+    margin-top: 30px;
+    background-color: #00FFC6; /* Mismo azul cian */
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 15px;
+    border-radius: 999px; /* Botón redondeado */
+  }
+  
+  .nav-button:hover {
+    color: #0F5944;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+
+    .nav-button-container {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-button-container.visible {
+      display: flex;
+    }
+  }
+  
