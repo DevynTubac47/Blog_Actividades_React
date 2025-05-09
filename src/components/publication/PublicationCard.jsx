@@ -30,7 +30,7 @@ export const PublicationsCard = ({ title, description, course, dateCreated, id, 
     return (
         <div onClick={handleNavigate} className="publications-card">
             <h3>{title}</h3>
-            <p>{dateCreated}</p>
+            <p>{new Date(dateCreated).toLocaleString()}</p>
             <p><strong>{course}</strong></p>
             <p>{description}</p>
         </div>

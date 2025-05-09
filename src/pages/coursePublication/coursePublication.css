@@ -1,0 +1,47 @@
+.course-publications-container {
+    background: linear-gradient(to right, #333, #333);
+    color: #333;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+   .title-course {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #3acca2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100px;
+}
+  
+  .spinner-border {
+    border-top-color: #9a30bf;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .grid p {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #e2e8f0; 
+    margin-top: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

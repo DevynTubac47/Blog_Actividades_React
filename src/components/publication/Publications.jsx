@@ -6,10 +6,10 @@ import { PublicationCard } from "./PublicationCard"
 export const Publications = ({ publications }) => {
   const navigate = useNavigate()
 
-  const navigateToPublicationHandler = (id) => {
-    navigate(`/publicaciones/${id}`)
+  const navigateToPublicationHandler = (publicationId) => {
+    navigate(`/publicaciones/${publicationId}`)
   }
-
+  
   return (
     <div className="publications-container">
       {publications.map((publication) => (
@@ -18,7 +18,7 @@ export const Publications = ({ publications }) => {
           title={publication.title}
           description={publication.description}
           course={publication.course}
-          dateCreated={publication.dateCreated}
+          dateCreated={new Date(publication.dateCreated).toLocaleString()}
           id={publication._id}
           navigateToPublicationHandler={navigateToPublicationHandler}
         />

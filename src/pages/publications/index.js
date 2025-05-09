@@ -1,1 +1,1 @@
-export { PublicationsPage } from './PublicationsPage.jsx';
+export { PublicationsPage } from './PublicationsPage';

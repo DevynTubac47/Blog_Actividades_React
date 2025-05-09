@@ -17,11 +17,56 @@ export const getPublications = async () => {
     }
 }
 
-export const getPublicationsPage = async (id) => {
+export const getPublicationsPage = async () => {
     try{
         return await apiClient.get(`/publication/publications`)
     }catch(e){
         return{
+            error: true,
+            message: e.message
+        }
+    }
+}
+
+export const getCommentsByPublication = async (publicationId) =>{
+    try{
+        return await apiClient.get(`/comment/${publicationId}/comments`)
+    }catch(e){
+        return {
+            error: true,
+            message: e.message
+        }
+    }
+}
+
+export const addComment = async (publicationId, data) => {
+    try {
+        return await apiClient.post(`/comment/${publicationId}/addComment`, data);
+    } catch (e) {
+        return {
+            error: true,
+            message: e.message
+        };
+    }
+};
+
+
+export const getPublicationById = async (publicationId) => {
+    try {
+        return await apiClient.get(`/publication/publication/${publicationId}`);
+    } catch (e) {
+        return {
+            error: true,
+            message: e.message,
+        };
+    }
+};
+
+export const getPublicationByCourse = async (course) => {
+    try{
+        return await apiClient.get(`/publication/${course}`)
+    }catch(e){
+        return {
             error: true,
             message: e.message
         }
